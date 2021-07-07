@@ -20,8 +20,8 @@ sed -i '$a src-git dockerman https://github.com/lisaac/luci-app-dockerman' feeds
 sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 
 #添加easyMesh及补丁
-sed -i '$a src-git easyMesh https://github.com/Cosme927/luci-app-easymesh' feeds.conf.default
-git clone https://github.com/Cosme927/luci-app-easymesh/tree/lean/patch /target/linux/generic/backport-5.4
+#sed -i '$a src-git easyMesh https://github.com/Cosme927/luci-app-easymesh' feeds.conf.default
+#git clone https://github.com/Cosme927/luci-app-easymesh/tree/lean/patch /target/linux/generic/backport-5.4
 
 #Add The Theme：luci-theme-opentomcat
 #git clone https://github.com/Cosme927/luci-theme-opentomcat package/luci-theme-opentomcat
