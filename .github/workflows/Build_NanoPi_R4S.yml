@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build_NanoPi_R4S_Lean
+name: Build_NanoPi_R4S
 
 on:
   repository_dispatch:
