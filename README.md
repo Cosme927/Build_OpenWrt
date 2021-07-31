@@ -12,8 +12,8 @@
     
     2、所有固件均集成PassWall、动态DNS、网络唤醒、WatchCat插件，常用且实用。
     
-    3、x86、NanoPi R4S、NanoPi R2S、微加云、章鱼星球、N1这几个设备的固件集成了薅羊毛所需的环境，包括但不限于Docker、Docker-Compose、
-       Node.js、Node-NPM、Perl、Python3等。
+    3、x86、NanoPi R4S、NanoPi R2S、微加云、章鱼星球、N1这几个设备的固件集成了薅羊毛所需的环境，包括但不限于Docker、
+       Docker-Compose、Node.js、Node-NPM、Perl、Python3等。
     
 三、文件-设备对照表
 
