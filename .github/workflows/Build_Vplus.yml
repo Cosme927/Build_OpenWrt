@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build_Vplus
+name: Build_Vplus&ZYXQ
 
 on:
   repository_dispatch:
@@ -32,6 +32,9 @@ env:
   UPLOAD_WETRANSFER: false
   UPLOAD_RELEASE: false
   TZ: Asia/Shanghai
+  OPENWRT_ARMVIRT: openwrt/bin/targets/*/*/*.tar.gz
+  PACKAGE_SOC: Vplus_S912
+  KERNEL_VERSION_NAME: 5.13.2_5.4.132
 
 jobs:
   build:
@@ -128,7 +131,7 @@ jobs:
         rm -rf packages
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
         echo "::set-output name=status::success"
-
+        
     - name: Upload firmware directory
       uses: actions/upload-artifact@main
       if: steps.organize.outputs.status == 'success' && !cancelled()
