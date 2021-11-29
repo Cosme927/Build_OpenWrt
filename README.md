@@ -22,6 +22,7 @@
            Newifi3.config - 新路由三
             CanBox.config - 星际宝盒
              Vplus.config - 微加云、章鱼星球
+             XY-C5.config - 小娱C5
                x86.config - x86
                 N1.config - 斐讯N1
    
