@@ -17,7 +17,7 @@
 
 sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 sed -i '$a src-git dockerman https://github.com/lisaac/luci-app-dockerman' feeds.conf.default
-sed -i '$a src-git OpenAppFilter https://github.com/destan19/OpenAppFilter' feeds.conf.default
+#sed -i '$a src-git OpenAppFilter https://github.com/destan19/OpenAppFilter' feeds.conf.default
 
 #Add The Theme：luci-theme-opentomcat
 #git clone https://github.com/Cosme927/luci-theme-opentomcat package/luci-theme-opentomcat
