@@ -15,7 +15,7 @@
 
 # Add feed source
 
-sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
+sed -i '$a src-git softs https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 #sed -i '$a src-git dockerman https://github.com/lisaac/luci-app-dockerman' feeds.conf.default
 #sed -i '$a src-git OpenAppFilter https://github.com/destan19/OpenAppFilter' feeds.conf.default
 
