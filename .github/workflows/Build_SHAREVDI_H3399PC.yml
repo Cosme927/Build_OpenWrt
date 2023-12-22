@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build Redmi_AX5
+name: Build SHAREVDI_H3399PC
 
 on:
   repository_dispatch:
