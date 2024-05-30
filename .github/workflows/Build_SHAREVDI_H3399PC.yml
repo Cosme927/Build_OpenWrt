@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: Build_X86
+name: Build_SHAREVDI_H3399PC
 
 on:
   repository_dispatch:
