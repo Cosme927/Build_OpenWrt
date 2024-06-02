@@ -1,8 +1,16 @@
 编译备忘：
-首次编译时，容易报错：bash: po2lmo: command not found 
-解决办法：
-在make -j1 V=s 之前先输入 make package/feeds/luci/luci-base/compile V=99这段代码
-一、说明
+
+
+
+
+一、编译备忘
+
+    1、首次编译时，容易报错：bash: po2lmo: command not found 
+
+    2、解决办法：在make -j1 V=s 之前先输入 make package/feeds/luci/luci-base/compile V=99这段代码
+    
+
+二、说明
 
     1、本仓库使用P3TERX大神脚本编译OpenWrt固件，对少许代码做了修改，并且根据自己需求集成了常用的软件包，没有多余插件。
 
@@ -10,7 +18,7 @@
     
     3、微加云、章鱼星球、N1设备编译好的固件需配合Flippy打包源码打包后才能使用，不可直接使用。
 
-二、固件特点
+三、固件特点
 
     1、固件默认IP：192.168.123.1，默认用户名：root，密码：password。
     
@@ -19,7 +27,7 @@
     3、x86、NanoPi R4S、NanoPi R2S、微加云、章鱼星球、N1这几个设备的固件集成了薅羊毛所需的环境，包括但不限于Docker、
        Docker-Compose、Node、Node-NPM、Perl、Python3、cgroup等。
     
-三、文件-设备对照表
+四、文件-设备对照表
 
         NanoPi_R2S.config - 友善R2S
         NanoPi_R4S.config - 友善R4S
