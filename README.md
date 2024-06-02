@@ -1,8 +1,3 @@
-编译备忘：
-
-
-
-
 一、编译备忘
 
     1、首次编译时，容易报错：bash: po2lmo: command not found 
