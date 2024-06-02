@@ -1,3 +1,7 @@
+编译备忘：
+首次编译时，容易报错：bash: po2lmo: command not found 
+解决办法：
+在make -j1 V=s 之前先输入 make package/feeds/luci/luci-base/compile V=99这段代码
 一、说明
 
     1、本仓库使用P3TERX大神脚本编译OpenWrt固件，对少许代码做了修改，并且根据自己需求集成了常用的软件包，没有多余插件。
