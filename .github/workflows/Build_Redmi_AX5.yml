@@ -10,14 +10,14 @@
 # See /LICENSE for more information.
 #
 
-name: Build Redmi_AX5
+name: Build_SHAREVDI_H3399PC
 
 on:
   repository_dispatch:
   workflow_dispatch:
 
 env:
-  REPO_URL: https://github.com/sdf8057/ipq6000.git
+  REPO_URL: https://github.com/sdf8057/ipq6000
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: Config_Files/Redmi_AX5.config
@@ -30,7 +30,7 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
 
     steps:
     - name: Checkout
@@ -92,8 +92,7 @@ jobs:
       run: |
         cd openwrt
         echo -e "$(nproc) thread compile"
-        make package/feeds/luci/luci-base/compile V=99
-        make -j1 V=s
+        make -j$(nproc) || make -j1 || make -j1 V=s
         echo "status=success" >> $GITHUB_OUTPUT
         grep '^CONFIG_TARGET.*DEVICE.*=y' .config | sed -r 's/.*DEVICE_(.*)=y/\1/' > DEVICE_NAME
         [ -s DEVICE_NAME ] && echo "DEVICE_NAME=_$(cat DEVICE_NAME)" >> $GITHUB_ENV
