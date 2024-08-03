@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: Build_SHAREVDI_H3399PC
+name: Build_Redmi_AX5
 
 on:
   repository_dispatch:
