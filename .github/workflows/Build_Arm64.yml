@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: Build_ARM64_ROOTFS
+name: Build_ARM64
 
 on:
   repository_dispatch:
