@@ -120,8 +120,8 @@ jobs:
       uses: unifreq/openwrt_packit@master
       env:
         OPENWRT_ARMVIRT: openwrt/bin/targets/*/*/*rootfs.tar.gz
-        PACKAGE_SOC: all
-        KERNEL_VERSION_NAME: 6.1.y_6.6.y
+        PACKAGE_SOC: zcube1-max_vplus
+        KERNEL_VERSION_NAME: 6.6.44
 
     - name: Organize files
       id: organize
