@@ -14,9 +14,12 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
+echo 'src-git small-package https://github.com/kenzok78/small-package' >>feeds.conf.default
+
+
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-echo 'src-git passwallpackages https://github.com/xiaorouji/openwrt-passwall-packages' >>feeds.conf.default
+#echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+#echo 'src-git passwallpackages https://github.com/xiaorouji/openwrt-passwall-packages' >>feeds.conf.default
 #echo 'src-git ddnsgo https://github.com/sirpdboy/luci-app-ddns-go' >>feeds.conf.default
 #echo 'src-git dockerman https://github.com/lisaac/luci-app-dockerman' >>feeds.conf.default
 #echo 'src-git OpenAppFilter https://github.com/destan19/OpenAppFilter' >>feeds.conf.default
