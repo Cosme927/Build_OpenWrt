@@ -55,7 +55,8 @@ jobs:
       run: |
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH openwrt
-        git clone https://github.com/Cosme927/msd_lite openwrt/msd_lite
+        git clone --depth=1 -b main https://github.com/ywt114/luci-app-msd_lite package/lean/msd_lite
+        git clone -b main https://github.com/ywt114/luci-app-msd_lite package/lean/msd_lite
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
     - name: Load custom feeds
@@ -67,13 +68,7 @@ jobs:
 
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
-
-    - name: Add luci-app-msd_lite
-      run: cd openwrt && cp -r msd_lite/luci-app-msd_lite feeds/luci/applications
-
-    - name: Add msd_lite
-      run: cd openwrt && cp -r msd_lite feeds/packages/net
-      
+    
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
 
